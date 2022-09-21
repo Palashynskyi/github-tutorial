@@ -1,4 +1,62 @@
 h1{
-    font-size: 75px;
+    font-size: 25px;
     background-color: bisque;
+}
+/* Загальні стилі для всіх типів повідомлень */
+.alert {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+/* Специфічні стилі для кожного типу */
+.success {
+    color: green;
+}
+
+.warning {
+    color: orange;
+}
+
+.error {
+    color: red;
+}
+
+.menu>li {
+    border: 1px solid tomato;
+}
+
+.social-links .link {
+    color: teal;
+}
+
+.social-links .link {
+    color: teal;
+}
+.social-links .link {
+    color: teal;
+}
+
+.social-links .link:hover,
+.social-links .link:focus {
+    color: orange;
+}
+
+.social-links .link:active {
+    color: red;
+}
+
+.schedule-body>tr:hover {
+    background-color: tomato;
+    color: white;
+}
+
+/* Оформлення таблиці */
+.schedule {
+    border-collapse: collapse;
+}
+
+.schedule th,
+.schedule td {
+    padding: 8px;
+    border: 1px solid #212121;
 }
