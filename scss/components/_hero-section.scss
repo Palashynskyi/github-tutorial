@@ -1,0 +1,109 @@
+.hero {
+    max-width: 480px;
+    padding: 118px 0;
+    margin: 0 auto;
+    background-color: var(--head-footter-bgc);
+    background-image: linear-gradient(to right,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/hero/bagraund-sm.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+
+    @media screen and (min-device-pixel-ratio: 2),
+        screen and (-webkit-min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(../images/hero/bagraund-sm@2x.jpg);
+            background-size: cover;
+        }
+    
+    
+        @media screen and (min-width: 768px) {
+            max-width: 768px;
+            background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(../images/hero/bagraund-md.jpg);
+            background-size: cover;
+        }
+    
+        @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+        screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
+        screen and (min-width: 768px) and (min-resolution: 192dpi),
+        screen and (min-width: 768px) and (min-resolution: 2dppx) {
+            background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(../images/hero/bagraund-md@2x.jpg);
+            background-size: cover;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            max-width: 1600px;
+            height: 600px;
+            padding: 200px 0;
+            background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(../images/hero/bagraund-lg.jpg);
+            background-size: cover;
+        }
+    
+        @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+        screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2),
+        screen and (min-width: 1200px) and (min-resolution: 192dpi),
+        screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+            background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(../images/hero/bagraund-lg@2x.jpg);
+            background-size: cover;
+        }
+}
+
+.hero__tittle {
+    margin: 0 auto 30px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 1.615;
+    text-transform: uppercase;    
+    color: var(--second-btn-color);
+
+    @media screen and (min-width: 1200px) {
+        max-width: 696px;
+    }
+
+    @media screen and (min-width: 768px) {
+        max-width: 360px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        max-width: 696px;
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.3636;
+    }
+}
+
+.hero-btn {
+    max-width: 216px;
+    width: 100%;
+    height: 50px;
+    border-radius: 4px;
+    margin-bottom: 200px;
+    cursor: pointer;
+    color: var(--second-btn-color);
+    background-color: var(--accent-color);
+    border-color: transparent;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: background-color var(--tran-dur-and-tim-fun), box-shadow var(--tran-dur-and-tim-fun);
+
+    &:hover, &:focus {
+        background-color: var(--second-bt-bg);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0);
+    }
+}
+
